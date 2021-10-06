@@ -1,0 +1,500 @@
+            html,
+            body {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                font-family: 'Montserrat', sans-serif;
+            }
+            /* Navigationsbar */
+            
+            nav {
+                display: flex;
+                background-color: rgb(238, 238, 238);
+                padding: 15px;
+                box-shadow: black 0px 0px 20px;
+                width: 100%;
+                align-items: center;
+                position: fixed;
+                top: 0;
+            }
+            
+            nav a {
+                margin: auto 20px;
+                text-decoration: none;
+                color: #000000;
+                text-align: center;
+                font-weight: 800;
+                text-transform: uppercase;
+                align-items: center;
+            }
+            
+            nav a:hover {
+                color: #009760;
+                transition: 0.5s;
+            }
+            
+            nav .logo {
+                width: 30px;
+                border-right: 2px solid black;
+                padding-right: 20px;
+            }
+            
+            .some {
+                font-size: 25px;
+            }
+            
+            #some {
+                margin-right: 50px;
+            }
+            /*             .btn {
+                margin: auto 20px;
+                font-size: 16px;
+                padding: 0px 0px;
+                text-decoration: none;
+                color: #000000;
+                text-align: center;
+                font-weight: 800;
+                text-transform: uppercase;
+                align-items: center;
+                border: none;
+                font-family: 'Montserrat', sans-serif;
+            } */
+            /* .btn {
+                border: none;
+                background-color: rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+                font-family: 'Montserrat';
+                padding: 5px;
+                font-size: 15px;
+                transition: 1s;
+            } */
+            /*             .btn:hover {
+                color: #009900;
+                transition: 0.5s;
+            } */
+            
+            #emner {
+                margin-left: auto;
+            }
+            /* Forside */
+            
+            .anchor {
+                display: block;
+                position: relative;
+                top: -50px;
+                visibility: hidden;
+            }
+            
+            .forside {
+                display: flex;
+                justify-content: center;
+                margin-top: 3%;
+                height: 800px;
+                color: white;
+                background-image: url(/images/billede4.jpg);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .citat {
+                margin: auto auto 15% 10%;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 60px;
+                font-weight: 500;
+            }
+            
+            .forfatter {
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 400;
+            }
+            /* Portfolio */
+            
+            h1 {
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+            
+            .portfolio {
+                margin: auto;
+            }
+            
+            .portfolio h1 {
+                text-align: center;
+                width: auto;
+            }
+            
+            .portfolio h4 {
+                margin-top: 50px;
+                margin-bottom: 0px;
+                text-align: center;
+                width: auto;
+                text-decoration: underline;
+                color: rgb(85, 85, 85);
+            }
+            
+            .filtrer1 {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                color: grey;
+            }
+            
+            .filtrer1 h5 {
+                margin: 0px;
+            }
+            
+            .filtrer1 button {
+                height: 25px;
+                padding: 0px 5px 0px 5px;
+                margin: 10px;
+                background-color: white;
+                border: 1px solid grey;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            
+            .linje1 {
+                border-bottom: 2px solid black;
+                margin-top: -10px;
+                width: 300px;
+            }
+            
+            .raekke1 {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .raekke1 img {
+                overflow-y: hidden;
+                overflow-x: hidden;
+                height: 300px;
+                width: 300px;
+                object-fit: contain;
+                margin: 5px;
+                transition: 0.5s;
+                box-shadow: black 0px 0px 5px 1px;
+                margin-bottom: 150px;
+            }
+            
+            .raekke2 {
+                margin-bottom: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .raekke2 img {
+                height: 300px;
+                width: 300px;
+                object-fit: contain;
+                margin: 5px;
+                transition: 0.5s;
+                box-shadow: black 0px 0px 5px 1px;
+            }
+            
+            .raekke1 img:hover {
+                transition: 0.5s;
+                transform: scale(1.05);
+                box-shadow: black 0px 0px 20px 5px;
+                filter: blur(2px) brightness(50%);
+            }
+            
+            .raekke2 img:hover {
+                transition: 0.5s;
+                transform: scale(1.05);
+                box-shadow: black 0px 0px 20px 5px;
+                filter: blur(2px) brightness(50%);
+            }
+            
+            #psopgave .psopgave {
+                position: absolute;
+                visibility: hidden;
+                margin-top: -17%;
+                margin-left: 75px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.750);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            
+            #psopgave:hover .psopgave {
+                visibility: visible;
+                transition: 0.5s;
+            }
+            /* Om mig */
+            
+            .billede {
+                height: 400px;
+            }
+            
+            .ommig {
+                background: rgb(0, 117, 75);
+                background: linear-gradient(180deg, rgba(0, 117, 75, 1) 0%, rgba(0, 35, 77, 1) 100%);
+                color: white;
+                text-align: center;
+                height: 900px;
+            }
+            
+            div h1 {
+                padding-top: 50px;
+            }
+            
+            .linje2 {
+                border-bottom: 2px solid rgb(255, 255, 255);
+                margin-top: -10px;
+                margin-bottom: 100px;
+                width: 300px;
+            }
+            
+            .ommigtekst {
+                display: flex;
+                justify-content: space-around;
+                text-align: left;
+                line-height: 1.7em;
+            }
+            
+            .ommigtekst a {
+                color: rgb(255, 208, 0);
+                font-weight: 600;
+            }
+            
+            .ommigtekst hr {
+                width: 50%;
+            }
+            
+            .ommigtekst h5 {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 15px;
+            }
+            
+            .ommigtekst img {
+                border: 3px solid white;
+                border-radius: 100%;
+            }
+            
+            .ommigtekst p {
+                width: 25%;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                overflow: hidden;
+                line-height: 1.8em;
+                margin-top: 0px;
+            }
+            
+            .highlight {
+                color: rgb(255, 208, 0);
+                font-weight: 600;
+            }
+            
+            .billede2 {
+                height: 400px;
+            }
+            /* Kompetencer */
+            
+            div h1 {
+                text-align: center;
+            }
+            
+            .kompetencer {
+                margin: 30px 10%;
+                padding-top: 50px;
+                margin-bottom: 150px;
+            }
+            
+            .kompetencer h2 {
+                -webkit-text-stroke: 1px black;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            
+            .tekst {
+                display: block;
+                float: left;
+                width: 25%;
+                margin-top: 0;
+                line-height: 1.5;
+            }
+            
+            .bar {
+                background: #ffffff;
+                display: block;
+                height: 15px;
+                border: 2px solid grey;
+                border-radius: 10px;
+                overflow: hidden;
+                font-weight: 700;
+            }
+            
+            .bar span {
+                height: 15px;
+                float: left;
+                background: #009760;
+                border-radius: 10px;
+            }
+            
+            .bar2 {
+                background: #ffffff;
+                display: block;
+                height: 15px;
+                border: 2px solid grey;
+                border-radius: 10px;
+                overflow: hidden;
+                font-weight: 700;
+            }
+            
+            .bar2 span {
+                height: 15px;
+                float: left;
+                background: #005ccc;
+                border-radius: 10px;
+            }
+            
+            .linje3 {
+                border-bottom: 2px solid rgb(0, 0, 0);
+                margin-top: -10px;
+                width: 25%;
+                float: left;
+            }
+            
+            .kompetencer ul {
+                margin-left: 30%;
+                margin-top: -5%;
+            }
+            
+            .highlight2 {
+                color: #009760;
+                font-weight: bold;
+            }
+            
+            .highlight3 {
+                color: #005ccc;
+                font-weight: bold;
+            }
+            /* Kontakt */
+            
+            #kontakt h1 {
+                text-align: center;
+                width: auto;
+            }
+            
+            .kontakt p {
+                width: 29%;
+                margin: auto;
+                line-height: 1.5;
+                margin-top: 25px;
+            }
+            
+            .formular {
+                display: flex;
+                justify-content: center;
+                border-radius: 5px;
+                padding: 20px;
+                margin-bottom: 150px;
+            }
+            
+            .formular form {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            input[type=text],
+            select,
+            textarea {
+                text-align: center;
+                width: 100%;
+                padding: 12px;
+                background-color: #D2D2D2;
+                border: 1px solid #D2D2D2;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+            }
+            
+            input[type=submit] {
+                background-color: black;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                transition: 0.5s;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #009900;
+                transition: 0.5s;
+                border-radius: 50px;
+            }
+            
+            footer {
+                background-color: #777;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                padding: 15px;
+                align-items: center;
+                font-size: 15px;
+            }
+            
+            footer i {
+                color: white;
+                text-decoration: none;
+                transition: 0.5s;
+                padding-left: 38px;
+            }
+            
+            footer i:hover {
+                color: black;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            
+            #some2 {
+                margin-right: 40px;
+            }
+            /* Programmer */
+            
+            .ps {
+                width: 80%;
+            }
+            
+            .ai {
+                width: 80%;
+            }
+            
+            .xd {
+                width: 90%;
+            }
+            
+            .pr {
+                width: 50%;
+            }
+            
+            .html {
+                width: 90%;
+            }
+            
+            .css {
+                width: 70%;
+            }
+            
+            .js {
+                width: 10%;
+            }
+            
+            .wp {
+                width: 10%;
+            }
